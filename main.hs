@@ -1,4 +1,3 @@
-import Debug.Trace
 import System.Random
 
 type Board = [[Char]]
@@ -84,4 +83,4 @@ printMaze = putStr . unlines
 main :: IO ()
 main = do
   seed <- getStdGen
-  printMaze $ buildMaze (generateEmptyBoard 16 16) [startPoint] seed
+  printMaze $ buildMaze (generateEmptyBoard 32 32) [startPoint] seed
